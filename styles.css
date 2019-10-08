@@ -1,0 +1,136 @@
+.calculator{
+    border: 3px solid purple;
+    background-color: #eee;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    width:150px;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  .buttons{
+    display: grid;
+    width: 100%;
+    border: 1px solid black;
+    height: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+  .screen{
+    border: 3px solid grey;
+    background-color: lightblue;
+    grid-row: 1;
+    grid-column: 1/5;
+  }
+  .button0{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 6;
+    grid-column: 1/3;
+  }
+  .button1{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .button2{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .button3{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 3;
+    grid-column: 3;
+
+  }
+  .button4{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .button5{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 4;
+    grid-column: 2;
+  }
+  .button6{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 4;
+    grid-column: 3;
+  }
+  .button7{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .button8{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 5;
+    grid-column: 2;
+  }
+  .button9{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 5;
+    grid-column: 3;
+  }
+  .deletebutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 2;
+    grid-column: 3;
+  }
+  .addbutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 3;
+    grid-column: 4;
+  }
+  .subtractbutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 4;
+    grid-column: 4;
+  }
+  .multiplybutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 5;
+    grid-column: 4;
+  }
+  .equalsbutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 6;
+    grid-column: 4;
+  }
+  .periodbutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 6;
+    grid-column: 3;
+  }
+  .clearbutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+  .dividebutton{
+    border: 3px solid grey;
+    background-color: #eee;
+    grid-row: 2;
+    grid-column: 4;
+  }
