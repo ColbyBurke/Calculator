@@ -2,28 +2,64 @@
     border: 3px solid purple;
     background-color: #eee;
     height: auto;
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: auto;
-    width:150px;
+    width:300px;
     border-radius: 5px;
     font-size: 30px;
+    padding: none;
+    height: 450px;
   }
   .buttons{
     display: grid;
-    width: 100%;
     border: 1px solid black;
     height: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
+    padding:0px;
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+    background-color:#f0c911;
+    border-radius:auto;
+    border:1px solid #e65f44;
+    cursor:pointer;
+    color:#c92200;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ded17c;
+    height: 100%;
+    width:100%;
+  }
+  input{
+    width: 98%;
+    height:98%;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+    
+  }
+  input::placeholder{
+    font-size: 30px;
+    color:limegreen;
+    font-family: Arial
+  }
+  input, select, textarea{
+    font-size: 30px;
+    color: limegreen;
+    font-family: Arial;
+    font-weight: bold;
   }
   .screen{
     border: 3px solid grey;
     background-color: lightblue;
     grid-row: 1;
     grid-column: 1/5;
+    width:auto;
+    height: auto;
   }
   .button0{
     border: 3px solid grey;
@@ -31,17 +67,26 @@
     grid-row: 6;
     grid-column: 1/3;
   }
+  .button0:hover{
+    background-color: lightblue;
+  }
   .button1{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 3;
     grid-column: 1;
   }
+  .button1:hover{
+    background-color: lightblue;
+  }
   .button2{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 3;
     grid-column: 2;
+  }
+  .button2:hover{
+    background-color: lightblue;
   }
   .button3{
     border: 3px solid grey;
@@ -50,11 +95,17 @@
     grid-column: 3;
 
   }
+  .button3:hover{
+    background-color: lightblue;
+  }
   .button4{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 4;
     grid-column: 1;
+  }
+  .button4:hover{
+    background-color: lightblue;
   }
   .button5{
     border: 3px solid grey;
@@ -62,11 +113,17 @@
     grid-row: 4;
     grid-column: 2;
   }
+  .button5:hover{
+    background-color: lightblue;
+  }
   .button6{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 4;
     grid-column: 3;
+  }
+  .button6:hover{
+    background-color: lightblue;
   }
   .button7{
     border: 3px solid grey;
@@ -74,11 +131,17 @@
     grid-row: 5;
     grid-column: 1;
   }
+  .button7:hover{
+    background-color: lightblue;
+  }
   .button8{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 5;
     grid-column: 2;
+  }
+  .button8:hover{
+    background-color: lightblue;
   }
   .button9{
     border: 3px solid grey;
@@ -86,11 +149,17 @@
     grid-row: 5;
     grid-column: 3;
   }
+  .button9:hover{
+    background-color: lightblue;
+  }
   .deletebutton{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 2;
     grid-column: 3;
+  }
+  .deletebutton:hover{
+    background-color: lightblue;
   }
   .addbutton{
     border: 3px solid grey;
@@ -98,11 +167,17 @@
     grid-row: 3;
     grid-column: 4;
   }
+  .addbutton:hover{
+    background-color: lightblue;
+  }
   .subtractbutton{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 4;
     grid-column: 4;
+  }
+  .subtractbutton:hover{
+    background-color: lightblue;
   }
   .multiplybutton{
     border: 3px solid grey;
@@ -110,11 +185,17 @@
     grid-row: 5;
     grid-column: 4;
   }
+  .multiplybutton:hover{
+    background-color: lightblue;
+  }
   .equalsbutton{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 6;
     grid-column: 4;
+  }
+  .equalsbutton:hover{
+    background-color: lightblue;
   }
   .periodbutton{
     border: 3px solid grey;
@@ -122,15 +203,49 @@
     grid-row: 6;
     grid-column: 3;
   }
+  .periodbutton:hover{
+    background-color: lightblue;
+  }
   .clearbutton{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 2;
     grid-column: 1/3;
   }
+  .clearbutton:hover{
+    background-color: lightblue;
+  }
   .dividebutton{
     border: 3px solid grey;
     background-color: #eee;
     grid-row: 2;
     grid-column: 4;
+  }
+  .dividebutton:hover{
+    background-color: lightblue;
+  }
+  button{
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+    background-color:#f0c911;
+    border-radius:auto;
+    border:1px solid #e65f44;
+    display:inline-block;
+    cursor:pointer;
+    color:#c92200;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ded17c;
+    height: 100%;
+    width:100%;
+  }
+  button:hover{
+    background:linear-gradient(to bottom, #e2a11f 5%, #f0c911 100%);
+    background-color:#f2ab1e;
+  }
+  button:active{
+    position:relative;
+    top:1px;
   }
