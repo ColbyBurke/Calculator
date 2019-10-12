@@ -13,25 +13,27 @@
 <body>
     <div class="calculator">
         <div class="buttons">
-            <div class="screen"><input type="number" placeholder="Input numbers..."></input></div>
-            <div class="button0"><button type="button" onclick="doMath(0)">0</button></div>
-            <div class="button1"><button type="button">1</button></div>
-            <div class="button2"><button type="button">2</button></div>
-            <div class="button3"><button type="button">3</button></div>
-            <div class="button4"><button type="button">4</button></div>
-            <div class="button5"><button type="button">5</button></div>
-            <div class="button6"><button type="button">6</button></div>
-            <div class="button7"><button type="button">7</button></div>
-            <div class="button8"><button type="button">8</button></div>
-            <div class="button9"><button type="button">9</button></div>
-            <div class="deletebutton"><button type="button">Del</button></div>
-            <div class="clearbutton"><button type="button">Clear</button></div>
-            <div class="periodbutton"><button type="button">.</button></div>
-            <div class="addbutton"><button type="button">+</button></div>
-            <div class="subtractbutton"><button type="button">-</button></div>
-            <div class="multiplybutton"><button type="button">X</button></div>
-            <div class="dividebutton"><button type="button">/</button></div>
-            <div class="equalsbutton"><button type="button">=</button></div>
+            <!---placeholder="Input numbers...👨‍💻" -->
+            <div class="screen" ><input id="screen" type="text" placeholder="Input numbers...👨‍💻" value="Input numbers...👨‍💻" ></input></div>
+            <div class="button0" onclick="doMath(0)"><button type="button">0</button></div>
+            <div class="button1" onclick="doMath(1)"><button type="button">1</button></div>
+            <div class="button2" onclick="doMath(2)"><button type="button">2</button></div>
+            <div class="button3" onclick="doMath(3)"><button type="button">3</button></div>
+            <div class="button4" onclick="doMath(4)"><button type="button">4</button></div>
+            <div class="button5" onclick="doMath(5)"><button type="button">5</button></div>
+            <div class="button6" onclick="doMath(6)"><button type="button">6</button></div>
+            <div class="button7" onclick="doMath(7)"><button type="button">7</button></div>
+            <div class="button8" onclick="doMath(8)"><button type="button">8</button></div>
+            <div class="button9" onclick="doMath(9)"><button type="button">9</button></div>
+            <div class="deletebutton" onclick="doMath('delete')"><button type="button">Del</button></div>
+            <div class="clearbutton" onclick="doMath('clear')"><button type="button">Clear</button></div>
+            <div class="periodbutton" onclick="doMath('.')"><button type="button">.</button></div>
+            <div class="addbutton" onclick="doMath('+')"><button type="button">+</button></div>
+            <div class="subtractbutton" onclick="doMath('-')"><button type="button">-</button></div>
+            <div class="multiplybutton" onclick="doMath('*')"><button type="button">X</button></div>
+            <div class="dividebutton" onclick="doMath('/')"><button type="button">/</button></div>
+            <div class="equalsbutton" onclick="doMath('=')"><button type="button">=</button></div>
+            <div class="bottom" onclick="doMath('factorialize')"><button type="button">Factorialize</button></div>
         </div>
     </div>
 </body>

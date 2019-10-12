@@ -12,11 +12,12 @@
     padding: none;
     height: 450px;
   }
+
   .buttons{
     display: grid;
     border: 1px solid black;
     height: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     padding:0px;
     box-shadow:inset 0px 1px 0px 0px #f9eca0;
@@ -223,6 +224,12 @@
   }
   .dividebutton:hover{
     background-color: lightblue;
+  }
+  .bottom{
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+    background-color:purple ;
+    grid-row: 7;
+    grid-column: 1/5;
   }
   button{
     box-shadow:inset 0px 1px 0px 0px #f9eca0;
