@@ -62,7 +62,6 @@ function doMath(btn) {
                 display.value = calcState.firstVal
             } else if (btn !== '=' && btn !== 'clear' && btn !== 'delete' && btn !== 'factorialize') {
                 btn = btn.toString();
-
                 calcState.operator = btn
                 display.value = calcState.operator
                 calcState.doSomething = true
