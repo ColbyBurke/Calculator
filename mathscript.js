@@ -15,28 +15,25 @@ const multiply = (x, y) => parseFloat(x) * parseFloat(y)
 const calculate = op => {
     let display = document.getElementById('screen')
     if (op === '+') {
-
         display.value = add(calcState.firstVal, calcState.secondVal)
-
         calcState.firstVal = display.value.toString();
-        (calcState.firstVal);
         calcState.secondVal = ''
         calcState.doSomething = true;
     }
-    if (op === '-') {
+    else if (op === '-') {
         display.value = subtract(calcState.firstVal, calcState.secondVal)
         calcState.firstVal = display.value.toString();
         calcState.secondVal = ''
         calcState.doSomething = true;
     }
-    if (op === '/') {
+    else if (op === '/') {
 
         display.value = divide(calcState.firstVal, calcState.secondVal)
         calcState.firstVal = display.value.toString();
         calcState.secondVal = ''
         calcState.doSomething = true;
     }
-    if (op === '*') {
+    else if (op === '*') {
         display.value = multiply(calcState.firstVal, calcState.secondVal)
         calcState.firstVal = display.value.toString();
         calcState.secondVal = ''
@@ -51,7 +48,7 @@ function doMath(btn) {
             if (btn === '=') {
                 calculate(calcState.operator)
             }
-            if (typeof btn === 'number') {
+            else if (String(btn).match(/[0-9]/) !== null) {
                 btn = btn.toString()
                 calcState.firstVal += btn
                 display.value = calcState.firstVal
@@ -88,11 +85,10 @@ function doMath(btn) {
                 calculate(calcState.operator)
                 calcState.doSomething = false;
             }
-            if (String(btn).match(/[\+\-\/\*]/) !== null) {
+            else if (String(btn).match(/[\+\-\/\*]/) !== null) {
                 calcState.operator = btn
                 calculate(calcState.operator)
-            } else if (typeof btn === 'number') {
-                (btn, 'second')
+            } else if (String(btn).match(/[0-9]/) !== null) {
                 btn = btn.toString()
                 calcState.secondVal += btn
                 display.value = calcState.secondVal
@@ -128,7 +124,7 @@ function doMath(btn) {
             }
         }
     }
-    if (btn === 'clear') {
+    else if (btn === 'clear') {
         calcState.operator = null
         calcState.secondVal = ''
         calcState.firstVal = ''
